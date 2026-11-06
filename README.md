@@ -72,6 +72,6 @@ app/src/main/
 
 ## 👤 Identitas
 
-- Nama: Adi Karunia
-- NIM: 1247050127
+- Nama: Adam Halawi
+- NIM: 1247050024
 - Mata kuliah: Pengembangan Aplikasi Mobile
