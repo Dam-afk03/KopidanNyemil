@@ -5,9 +5,10 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/splashFragment">
 
+    <!-- 1. Splash Screen -->
     <fragment
         android:id="@+id/splashFragment"
-        android:name="lat.pam.kopidannyemil.SplashFragment" >
+        android:name="lat.pam.kopidannyemil.SplashFragment">
         <action
             android:id="@+id/action_splash_to_signUp"
             app:destination="@id/signUpFragment"
@@ -15,9 +16,10 @@
             app:popUpToInclusive="true" />
     </fragment>
 
+    <!-- 2. Sign Up (Landing Awal) -->
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="lat.pam.kopidannyemil.SignUpFragment" >
+        android:name="lat.pam.kopidannyemil.SignUpFragment">
         <action
             android:id="@+id/action_signUp_to_login"
             app:destination="@id/loginFragment" />
@@ -26,9 +28,10 @@
             app:destination="@id/registerFragment" />
     </fragment>
 
+    <!-- 3. Login -->
     <fragment
         android:id="@+id/loginFragment"
-        android:name="lat.pam.kopidannyemil.LoginFragment" >
+        android:name="lat.pam.kopidannyemil.LoginFragment">
         <action
             android:id="@+id/action_login_to_home"
             app:destination="@id/homeFragment"
@@ -36,18 +39,20 @@
             app:popUpToInclusive="true"/>
     </fragment>
 
+    <!-- 4. Register -->
     <fragment
         android:id="@+id/registerFragment"
-        android:name="lat.pam.kopidannyemil.RegisterFragment" >
+        android:name="lat.pam.kopidannyemil.RegisterFragment">
         <action
             android:id="@+id/action_register_to_login"
             app:destination="@id/loginFragment"
             app:popUpTo="@id/signUpFragment" />
     </fragment>
 
+    <!-- 5. Home -->
     <fragment
         android:id="@+id/homeFragment"
-        android:name="lat.pam.kopidannyemil.HomeFragment" >
+        android:name="lat.pam.kopidannyemil.HomeFragment">
         <action
             android:id="@+id/action_home_to_profile"
             app:destination="@id/profileFragment" />
@@ -56,25 +61,35 @@
             app:destination="@id/addressFragment" />
     </fragment>
 
+    <!-- 6. Profile (Ditambahkan action Logout ke Sign Up) -->
     <fragment
         android:id="@+id/profileFragment"
-        android:name="lat.pam.kopidannyemil.ProfileFragment" />
+        android:name="lat.pam.kopidannyemil.ProfileFragment">
+        <action
+            android:id="@+id/action_profile_to_signUp"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
 
+    <!-- 7. Address / Order -->
     <fragment
         android:id="@+id/addressFragment"
-        android:name="lat.pam.kopidannyemil.AddressFragment" >
+        android:name="lat.pam.kopidannyemil.AddressFragment">
         <action
             android:id="@+id/action_address_to_confirmation"
             app:destination="@id/confirmationFragment" />
     </fragment>
 
+    <!-- 8. Confirmation (Action kembali ke Home dimasukkan ke dalam fragment ini) -->
     <fragment
         android:id="@+id/confirmationFragment"
-        android:name="lat.pam.kopidannyemil.ConfirmationFragment" />
+        android:name="lat.pam.kopidannyemil.ConfirmationFragment">
+        <action
+            android:id="@+id/action_confirmation_to_home"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 
-    <action
-        android:id="@+id/action_confirmation_to_home"
-        app:destination="@id/homeFragment"
-        app:popUpTo="@id/homeFragment"
-        app:popUpToInclusive="true" />
 </navigation>

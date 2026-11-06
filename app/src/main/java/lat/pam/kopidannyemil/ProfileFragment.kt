@@ -40,9 +40,20 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
         // Tombol Logout -> Reset data dan kembali ke halaman Login
         btnLogout.setOnClickListener {
+            // 1. Reset data pengguna & keranjang
             DummyData.currentUser = null
             DummyData.cart.clear()
-            findNavController().navigate(R.id.action_profile_to_login)
+
+            // 2. Reset badge navbar jika ada
+            (activity as? MainActivity)?.updateBadge()
+
+            // 3. Navigasi ke halaman awal (SignUp/Splash)
+            try {
+                findNavController().navigate(R.id.action_profile_to_signUp)
+            } catch (e: Exception) {
+                // Alternatif aman jika action-id bermasalah:
+                findNavController().navigate(R.id.signUpFragment)
+            }
         }
     }
 }
