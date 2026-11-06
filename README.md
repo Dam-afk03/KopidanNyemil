@@ -9,7 +9,7 @@ Aplikasi ini terdiri dari 8 alur layar utama:
 ### 1. Alur Autentikasi & Landing
 | 1. Splash Screen | 2. Sign Up Options | 3. Login User | 4. Register |
 |:---:|:---:|:---:|:---:|
-| <img src="SecreenShoot/1_Splash.png" width="200"/> | <img src="SecreenShoot/2_Sign up.png" width="200"/> | <img src="SecreenShoot/3_Login.png" width="200"/> | <img src="SecreenShoot/4_Register.png" width="200"/> |
+| <img src="SecreenShoot/1_Splash.png" width="200"/> | <img src="SecreenShoot/2_Sign up.png" width="200"/> | <img src="SecreenShoot/3_Login (1).png" width="200"/> | <img src="SecreenShoot/4_Register.png" width="200"/> |
 | Layar penyambung utama dengan tombol *Start Now*. | Pilihan awal pendaftaran atau masuk pengguna. | Form autentikasi dengan toggle *Password Visibility*. | Form pendaftaran akun baru bagi pengguna baru. |
 
 ### 2. Fitur Utama & Pemesanan
