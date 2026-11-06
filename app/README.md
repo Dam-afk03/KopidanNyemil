@@ -58,7 +58,7 @@ app/src/main/
 1. **Clone Repositori**:
 
    ```bash
-   git clone https://github.com/username/KopiDanNyemil.git
+   git clone https://github.com/Dam-afk03/KopiDanNyemil.git
    ```
 
 2. **Buka Proyek**:
