@@ -24,15 +24,11 @@ Aplikasi ini terdiri dari 8 alur layar utama:
 
 * **Arsitektur Navigasi**: Single-Activity Architecture menggunakan `Navigation Component` (`NavHostFragment` & `nav_graph.xml`).
 
-* **Antarmuka Pengguna (UI)**:
-
-  * Material Design 3 Components (`TextInputLayout`, `BottomNavigationView`, `CardView`).
-
-  * `RecyclerView` dengan kustom `MenuAdapter` untuk efisiensi render daftar menu.
-
+- **Antarmuka Pengguna (UI)**:
+  * Material Design Components (`TextInputLayout` dengan *Password Visibility Toggle*, `BottomNavigationView`, `CardView`).
+  * Desain form input responsif menggunakan `ScrollView` untuk mencegah elemen terpotong pada berbagai ukuran layar.
+  * Katalog menu `RecyclerView` dengan kustom `MenuAdapter` dan filter kategori dinamis (*Semua*, *Minuman*, *Makanan*).
   * Penanganan dinamis marjin atas layar (*notch / punch-hole camera inset padding*).
-
-* **Pengelolaan Data**: `DummyData` Singleton Pattern untuk mengelola state autentikasi pengguna (`currentUser`), katalog menu (`MenuItem`), serta manipulasi keranjang belanja (`cart`).
 
 ## 📁 Struktur Direktori Proyek
 
