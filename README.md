@@ -9,13 +9,13 @@ Aplikasi ini terdiri dari 8 alur layar utama:
 ### 1. Alur Autentikasi & Landing
 | 1. Splash Screen | 2. Sign Up Options | 3. Login User | 4. Register |
 |:---:|:---:|:---:|:---:|
-| <img src="ScreenShoot/1_Splash.png" width="200"/> | <img src="ScreenShoot/2_Sign up.png" width="200"/> | <img src="ScreenShoot/3_Login.png" width="200"/> | <img src="ScreenShoot/4_Register.png" width="200"/> |
+| <img src="SecreenShoot/1_Splash.png" width="200"/> | <img src="SecreenShoot/2_Sign up.png" width="200"/> | <img src="SecreenShoot/3_Login.png" width="200"/> | <img src="SecreenShoot/4_Register.png" width="200"/> |
 | Layar penyambung utama dengan tombol *Start Now*. | Pilihan awal pendaftaran atau masuk pengguna. | Form autentikasi dengan toggle *Password Visibility*. | Form pendaftaran akun baru bagi pengguna baru. |
 
 ### 2. Fitur Utama & Pemesanan
 | 5. Home Screen | 6. Profile Screen | 7. Alamat (Order) | 8. Confirmation |
 |:---:|:---:|:---:|:---:|
-| <img src="ScreenShoot/5_Home.png" width="200"/> | <img src="ScreenShoot/6_Profile.png" width="200"/> | <img src="ScreenShoot/7_AlamatOrder.png" width="200"/> | <img src="ScreenShoot/8_Konfirmasi.png" width="200"/> |
+| <img src="SecreenShoot/5_Home.png" width="200"/> | <img src="SecreenShoot/6_Profile.png" width="200"/> | <img src="SecreenShoot/7_AlamatOrder.png" width="200"/> | <img src="SecreenShoot/8_Konfirmasi.png" width="200"/> |
 | Katalog menu `RecyclerView` dengan filter kategori & *Add to Cart*. | Manajemen profil pengguna dengan avatar inisial otomatis & tombol *Logout*. | Form alamat pengiriman terintegrasi dengan ringkasan *Cart Summary* & total harga. | Layar sukses pemesanan dengan ucapan terima kasih & konfirmasi kurir. |
 
 ## 🛠️ Teknologi & Fitur Utama
