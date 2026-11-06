@@ -17,9 +17,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Menampilkan nama pengguna yang sedang login
-        val name = DummyData.currentUser?.name ?: "Tamu"
-        view.findViewById<TextView>(R.id.tvGreeting).text = "Halo $name,"
+        // Ubah R.id.tvWelcomeUser menjadi R.id.tvGreeting sesuai XML
+        val tvGreeting = view.findViewById<TextView>(R.id.tvGreeting)
+
+        // Tampilkan nama pengguna yang sedang aktif dari DummyData
+        val userAktif = DummyData.currentUser
+        tvGreeting?.text = "Halo, ${userAktif?.name ?: "User"}"
 
         val rvMenu = view.findViewById<RecyclerView>(R.id.rvMenu)
         rvMenu.layoutManager = LinearLayoutManager(requireContext())

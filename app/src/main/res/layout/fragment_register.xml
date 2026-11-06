@@ -1,26 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent" android:layout_height="match_parent"
-        android:orientation="vertical" android:gravity="center" android:padding="24dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
 
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Register" android:textSize="24sp" android:textStyle="bold" android:layout_marginBottom="32dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:layout_marginBottom="32dp"/>
 
-        <EditText android:id="@+id/etNamaLengkap" android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:hint="nama lengkap" android:layout_marginBottom="16dp" android:padding="12dp" android:background="@android:drawable/editbox_background"/>
+        <!-- 1. Nama Lengkap (Box) -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:hintEnabled="false"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp">
 
-        <EditText android:id="@+id/etUsernameReg" android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:hint="username" android:layout_marginBottom="16dp" android:padding="12dp" android:background="@android:drawable/editbox_background"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNamaLengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="nama lengkap"
+                android:textColor="#111111"
+                android:textColorHint="#AAAAAA"
+                android:textSize="16sp"
+                android:paddingVertical="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText android:id="@+id/etPasswordReg" android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:hint="password" android:inputType="textPassword" android:layout_marginBottom="48dp" android:padding="12dp" android:background="@android:drawable/editbox_background"/>
+        <!-- 2. Username (Box) -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:hintEnabled="false"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp">
 
-        <Button android:id="@+id/btnRegisterSubmit" android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Register" android:backgroundTint="#212121"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsernameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="username"
+                android:textColor="#111111"
+                android:textColorHint="#AAAAAA"
+                android:textSize="16sp"
+                android:paddingVertical="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 3. Password (Box + Eye Icon Toggle) -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#555555"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPasswordReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColor="#111111"
+                android:textColorHint="#AAAAAA"
+                android:textSize="16sp"
+                android:paddingVertical="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegisterSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#212121"
+            app:cornerRadius="12dp"/>
+
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

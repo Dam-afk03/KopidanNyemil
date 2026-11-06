@@ -27,7 +27,7 @@ object DummyData {
     )
 
     val users = mutableListOf(
-        User("Adi Karunia", "admin", "admin123")
+        User("Adam Halawi", "admin", "admin123")
     )
 
     var currentUser: User? = null
@@ -47,6 +47,7 @@ object DummyData {
 
     fun cartCount(): Int = cart.values.sum()
 
+    // Perbaikan perkalian harga * kuantitas
     fun cartTotal(): Int = cart.entries.sumOf { it.key.price * it.value }
 
     fun rupiah(value: Int): String {

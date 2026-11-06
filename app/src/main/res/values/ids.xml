@@ -7,4 +7,6 @@
     <item name="etProfileNama" type="id" />
     <item name="tvProfileGreeting" type="id" />
     <item name="etDetailAlamat" type="id" />
+    <item name="etUsername" type="id" />
+    <item name="tvWelcomeUser" type="id" />
 </resources>
