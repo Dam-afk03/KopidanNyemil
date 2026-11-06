@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnOkeKonfirmasi" type="id" />
+    <item name="btnLoginSubmit" type="id" />
+    <item name="btnOrderKirim" type="id" />
+    <item name="action_profile_to_login" type="id" />
+    <item name="etProfileNama" type="id" />
+    <item name="tvProfileGreeting" type="id" />
+    <item name="etDetailAlamat" type="id" />
+</resources>

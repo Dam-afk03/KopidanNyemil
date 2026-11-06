@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Header Sapaan Pengguna -->
+    <TextView
+        android:id="@+id/tvConfirmationGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Halo adam halawi,"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:layout_marginTop="28dp"/>
+
+    <!-- Content Tengah (Icon OK + Pesan) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Lingkaran Hijau OK -->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_launcher_background"
+            android:backgroundTint="#A5D6A7"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="#1B5E20"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Teks Informasi Pesanan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terima kasih sudah memesan\ntunggu sebentar kurir kami\nsegera mengantarkan pesananmu😊"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"/>
+    </LinearLayout>
+
+    <!-- Tombol Oke (Kembali ke Home) -->
+    <Button
+        android:id="@+id/btnOkeConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Oke"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="#111111"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="12dp"/>
+
+</LinearLayout>
